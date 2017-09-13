@@ -8,13 +8,15 @@ import {Home} from './Home';
 export class Root extends React.Component {
   render(){
     return(
-    <div className="container">
+    <div className="body">
       <Header />
       <hr />
       <div className="content">
         <Route exact path="/" component={Home} />
-        <Route path="/newEntry" component={Home} />
-        <Route path="/Analys" component={Home} />
+        <Route path="/presentation" component={Home} />
+        <Route path="/behandling" component={Home} />
+        <Route path="/priser" component={Home} />
+        <Route path="/kontakt" component={Home} />
       </div>
     </div>
   )

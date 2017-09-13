@@ -3,11 +3,8 @@ import React from 'react';
 export class Home extends React.Component{
   render(){
     return(
-      <div>
-        <h1>Home</h1>
-        <pre>
-          Detta är bara startsidan :)
-        </pre>
+      <div className="container">
+        <img src={require('./Home/hem-bild1.png')} height="20%" />
       </div>
     )
   }
