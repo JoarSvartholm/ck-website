@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #111;
+}
+.sbtn {
+  font-family:
+
+}
+.sbtn:hover{
+  background-color: #666;
+}
+
+.content {
+  font-size: large;
+}
+
+.container{
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  background-color: white;
+}
