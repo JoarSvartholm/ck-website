@@ -4,19 +4,12 @@
   width: 100%;
 }
 
-
-
-  .navbar  {
-    visibility: visible;
-    background-color: #005;
-    padding-left: 10px;
-    border-radius: 10px 0 0 10px;
-    margin-left: 30%;
-  }
-  .navbar-dev {
-    visibility: hidden;
-    background-color: #005;
-  }
+.navbar  {
+  background-color: #005;
+  padding-left: 10px;
+  border-radius: 10px 0 0 10px;
+  margin-left: 30%;
+}
 
 ul {
   list-style-type: none;
@@ -57,4 +50,52 @@ li a:hover{
   height: 100%;
 
   margin-right: 10%;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position:relative;
+  width: 36px;
+  height: 30px;
+  left: 70%;
+  top: 20%;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #005;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #005;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
