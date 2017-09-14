@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './Header/Header.css'
-import {Navbar} from './Header/Navbar'
+//import {Navbar} from './Header/Navbar'
+import {NavbarDev} from './Header/NavbarDev'
 import {Head} from './Header/Head'
 
 export class Header extends React.Component {
@@ -9,7 +10,7 @@ export class Header extends React.Component {
     return(
       <div className="header">
           <Head />
-          <Navbar />
+          <NavbarDev />
       </div>
     )
   }
