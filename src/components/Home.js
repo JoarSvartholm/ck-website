@@ -27,6 +27,7 @@ export class Home extends React.Component{
       return(
         <div className="container">
           <img src={require('./Home/hem-bild1.png')} alt={'hej'} height={50} />
+          <p>HEJEH</p>
         </div>
       )
     }
@@ -34,6 +35,7 @@ export class Home extends React.Component{
       return(
         <div className="container">
           <img src={require('./Home/hem-bild1.png')} alt={'hej'} width={500} />
+          <p>HEJEH</p>
         </div>
       )
     }
