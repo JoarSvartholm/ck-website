@@ -1,27 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Button from 'react-button';
 import { slide as Menu } from 'react-burger-menu'
 
-import {Devnav} from './Devnav'
 import './Header.css'
 
 export class Navbar extends React.Component{
   constructor(){
     super();
+    this.handleWindowChange = this.handleWindowChange.bind(this);
     this.state = {
       width: window.innerWidth,
-      showMenu: false,
     };
   }
   showSettings (event) {
     event.preventDefault();
   }
-  compnentWillMount(){
-    window.addEventListener('resize',this.handleWindowChange());
+  compnentDidMount(){
+    this.handleWindowChange();
+    window.addEventListener("resize",this.handleWindowChange());
   }
-  compnentWillUnMount(){
-    window.removeEventListener('resize',this.handleWindowChange());
+  compnentDidUnMount(){
+    window.removeEventListener("resize",this.handleWindowChange());
   }
   handleWindowChange(){
     this.setState({
@@ -29,17 +28,8 @@ export class Navbar extends React.Component{
     });
   }
 
-  openNav() {
-    this.setState({showMenu:true});
-  }
-
-  /* Set the width of the side navigation to 0 */
-  closeNav() {
-    this.setState({showMenu:false});
-  }
-
   render(){
-    const isMobile = this.state.width <= 1000;
+    const isMobile = this.state.width <= 760;
     if (isMobile){
       return(
 

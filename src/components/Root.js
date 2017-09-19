@@ -4,6 +4,7 @@ import {Header} from "./Header";
 
 //components
 import {Home} from './Home';
+import {Presentation} from './Presentation';
 
 export class Root extends React.Component {
   render(){
@@ -13,7 +14,7 @@ export class Root extends React.Component {
       <hr />
       <div className="content">
         <Route exact path="/" component={Home} />
-        <Route path="/presentation" component={Home} />
+        <Route path="/presentation" component={Presentation} />
         <Route path="/behandling" component={Home} />
         <Route path="/priser" component={Home} />
         <Route path="/kontakt" component={Home} />
