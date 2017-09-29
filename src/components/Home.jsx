@@ -2,11 +2,11 @@ import React from 'react';
 
 import './Content.css';
 
-export class Presentation extends React.Component{
+export class Home extends React.Component{
 
   render(){
     var content = <div>
-      
+
     </div>
 
     return(
