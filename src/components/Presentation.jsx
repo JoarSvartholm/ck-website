@@ -3,25 +3,6 @@ import React from 'react';
 import './Content.css';
 
 export class Presentation extends React.Component{
-  constructor(){
-    super();
-    this.state={
-      width: window.innerWidth,
-    }
-    this.handleWindowChange = this.handleWindowChange.bind(this);
-  }
-  compnentWillMount(){
-    this.handleWindowChange();
-    window.addEventListener("resize",this.handleWindowChange());
-  }
-  compnentDidUnMount(){
-    window.removeEventListener("resize",this.handleWindowChange());
-  }
-  handleWindowChange(){
-    this.setState({
-      width: window.innerWidth,
-    });
-  }
 
   render(){
     var content = <div>
