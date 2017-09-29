@@ -26,12 +26,3 @@ body {
   margin: 0 auto;
   background-color: white;
 }
-
-.left{
-  width:50%;
-  float:left;
-}
-.right{
-  width:50%;
-  float:right;
-}

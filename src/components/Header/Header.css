@@ -6,10 +6,10 @@
 
 /*NAVBAR*/
 .navbar-web{
-  visibility:hidden;
+  display: none;
 }
 .navbar-dev{
-  visibility:visible;
+  display: inline;
 }
 
 li a {
@@ -24,10 +24,10 @@ li a {
 
 @media screen and (min-width: 480px){
   .navbar-web{
-    visibility:visible;
+    display: inline;
   }
   .navbar-dev{
-    visibility:hidden;
+    display: none;
   }
   .navbar{
     background-color: #005;
@@ -124,7 +124,7 @@ li a:hover{
     float:right;
     height: 30px;
     position: static;
-    margin-top: 79px;
+    margin-top: 47px;
     margin-right: 10%;
   }
   .ig {
@@ -132,7 +132,7 @@ li a:hover{
     float:right;
     height: 30px;
     position: static;
-    margin-top: 79px;
+    margin-top: 47px;
     margin-right: 1%;
   }
 }
