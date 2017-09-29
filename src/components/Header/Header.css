@@ -4,11 +4,58 @@
   width: 100%;
 }
 
-.navbar  {
-  background-color: #005;
-  padding-left: 10px;
-  border-radius: 10px 0 0 10px;
-  margin-left: 30%;
+/*NAVBAR*/
+.navbar-web{
+  visibility:hidden;
+}
+.navbar-dev{
+  visibility:visible;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 15px 20px ;
+  width: inherit;
+}
+
+@media screen and (min-width: 480px){
+  .navbar-web{
+    visibility:visible;
+  }
+  .navbar-dev{
+    visibility:hidden;
+  }
+  .navbar{
+    background-color: #005;
+    padding-left: 0px;
+    border-radius:0;
+    margin-left: 0;
+  }
+  li a {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (min-width: 780px){
+  .navbar-web{
+    visibility:visible;
+  }
+  .navbar-dev{
+    visibility:hidden;
+  }
+  .navbar  {
+    background-color: #005;
+    padding-left: 10px;
+    border-radius: 10px 0 0 10px;
+    margin-left: 30%;
+  }
+  li a {
+    padding: 15px 17px;
+  }
 }
 
 ul {
@@ -21,43 +68,83 @@ ul {
 li {
   float: left;
 }
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  padding: 15px 20px;
-  text-decoration: none;
-}
+
+
 
 li a:hover{
   background-color: #111;
 }
 
-.head{
-  margin-left: 5%;
-  height:80px;
-}
-
+/*HEAD*/
 .head img {
   display:inline-block;
   float:left;
+
+  margin: 0 auto 0 auto;
+}
+.head-logo{
+  width:100%;
 }
 
+.head{
+  margin-left: 0;
+  height:80px;
+  margin: 0 auto 0 auto;
+}
 .fb {
   display:inline-block;
-  float:right;
-  height: 100%;
-
-  margin-right: 10%;
+  float:left;
+  height: 30px;
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+.ig {
+  display:inline-block;
+  float:left;
+  height: 30px;
+  position: relative;
+  top: 10%;
+  left: 8%;
+}
+@media screen and (min-width:480px){
+  .head-logo{
+    width:inherit;
+  }
+  .head img {
+    display:inline-block;
+    float:left;
+  }
+  .head{
+    margin-left: 5%;
+    height:80px;
+  }
+  .fb {
+    display:inline-block;
+    float:right;
+    height: 30px;
+    position: static;
+    margin-top: 79px;
+    margin-right: 10%;
+  }
+  .ig {
+    display:inline-block;
+    float:right;
+    height: 30px;
+    position: static;
+    margin-top: 79px;
+    margin-right: 1%;
+  }
 }
 
+
+/*NAVMOBILE*/
 /* Position and sizing of burger button */
 .bm-burger-button {
   position:relative;
   width: 36px;
   height: 30px;
-  left: 70%;
+  left: 85%;
   top: 20%;
 }
 
@@ -80,7 +167,7 @@ li a:hover{
 /* General sidebar styles */
 .bm-menu {
   background: #005;
-  padding: 2.5em 1.5em 0;
+  padding: 1.5em 1.5em 0;
   font-size: 1.15em;
 }
 
